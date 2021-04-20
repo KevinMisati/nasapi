@@ -164,6 +164,8 @@ h1{
 .image-gallery{
     width: 100%;
     max-width: var(--max-width);
+    display: grid;
+    grid-template-columns:repeat(2,1fr)
 }
 .image-gal{
     object-fit: cover;
