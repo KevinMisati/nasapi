@@ -1,0 +1,176 @@
+:root{
+    --mainWhite:#fff;
+    --main-dark:#111;
+    --max-width:1300px;
+}
+
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color:var(--main-dark) ;
+    color:var(--mainWhite);
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+
+.hero{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("./img/bg.jpg") center/cover fixed no-repeat;
+    position: relative;
+}
+#particles-js{
+    width:100vw;
+    height:100vh;
+    position:absolute;
+    }
+.hero-container{
+    text-align:center;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.text{
+    display: fixed;
+}
+h1{
+    font-size:3rem;
+}
+.text-title{
+    color:var(--mainWhite);
+    text-transform: capitalize;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+
+
+.daily-container {
+    padding: 5rem 5rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+.picture-explanation-container{
+    width:100%;
+    max-width:var(--max-width);
+
+}
+.section-title{
+    margin: 1rem 0;
+    text-align: center;
+}
+.img-text-container{
+    display: flex;
+}
+.date{
+    margin: .5rem 0;;
+}
+.explanation {
+    letter-spacing: .05rem;
+    font-size:1.2rem;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+#picture {
+  width: 50%;
+  margin-right: 1rem;
+}
+@media screen and (max-width:700px){
+    .daily-container{
+        padding: 3rem;
+    }
+    .img-text-container{
+    flex-direction: column;
+}
+#picture {
+  width: 100%;
+  margin-right: 1rem;
+  margin: 2rem 0 0 0;
+}
+.explanation{
+    margin-right:0;
+}
+
+}
+
+
+/* ====================mars rover section====================== */
+.rover-photos {
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    height: auto;
+   align-items: center;  
+}
+.rover-img-text{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.rover-photos-container{
+    width:100%;
+    max-width: var(--max-width);
+    padding:2rem 0; 
+}
+.img-container{
+    width: 50%;
+    margin-right: 1rem;
+}
+#rover-image{
+    width: 100%;
+}
+@media screen and (max-width:700px){
+    .rover-img-text{
+    flex-direction: column-reverse;
+
+}
+.rover-photos{
+    padding:0 5rem;
+}
+#rover-image{
+    width: 100%;
+}
+.img-container{
+    width:100%;
+    margin-right: 0;
+}
+}
+/* ====================end of mars rover section================= */
+
+
+/* ===================image gallery======================== */
+.image-gallery-container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+    flex-direction: column;
+}
+.image-gallery{
+    width: 100%;
+    max-width: var(--max-width);
+}
+.image-gal{
+    object-fit: cover;
+}
+@media screen and (max-width:700px){
+    .image-gallery{
+        padding: 0 3rem;
+    }
+}
+/* ===================end of image gallery======================== */

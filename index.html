@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+    <title>NASA API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main class="" >
+
+        <!-- ===============hero section============= -->
+        <section class="hero"  >
+            <div id="particles-js"><h1></h1></div>
+            <div class="hero-container" >
+                <div class="text"> 
+                    <h1 class="text-title">Let`s explore the space together</h1>
+                </div>
+            </div> 
+        </section>
+        <!-- =================end of hero section======== -->
+
+
+
+<!-- ================Nasa pic of the day==================== -->
+<section  class="daily-container">
+    <!-- <h2>NASA's Astronomy Picture of the Day</h2> -->
+   
+    <div class="picture-explanation-container">
+        <h2 class="section-title">Daily News on <span id="date"></span> from NASA</h2>
+        <div class="img-text-container">
+       <div class="text">
+        <h2 class="section-title" id="title"></h2>
+        <p class="date" id="date"></p>
+        <p class="explanation" id="explanation"><br><br></p>
+        </div>
+        <img src="" id="picture" alt="astronomy image by NASA" />
+        </div>
+    </div>
+    </section>
+    <!-- ================end of Nasa pic of the day==================== -->
+
+    <!-- ================mars rover photos==================== -->
+    <section class="rover-photos">
+        <div class="rover-photos-container">
+        <h2 class="section-title">Mars Rover Photo<span id="date"></span></h2>
+
+        <div class="rover-img-text">
+        <div class="rover-text">
+        <h3 id="rover-title"></h3>
+        <h3 >Launched on <span id="launch-date"></span></h3>
+        <h3 >Landed on <span id="land-date"></span></h3>
+        </div>
+        
+<div class="img-container">
+            <img id="rover-image" src="" alt="">
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- ================end mars rover photos==================== -->
+
+    <!-- ====================image gallery=========================== -->
+    <section class="image-gallery-container">
+        <h2 class="section-title">Random Images From Nasa Library</h2>
+        <div id="image-gallery" class="image-gallery">
+        
+        </div>
+    </section>
+    <!-- ====================end image gallery========================= -->
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.1/tsparticles.min.js"
+        integrity="sha512-PYHWDEuXOTJ9MZ+/QHqkbgiEYZ+LImQv3i/9NyYOABFvK37e4q4Wg7aQDN1JpoGiEu1TYZh6JMrZluZox2gbDA=="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./config.js"></script>
+    <script src="particlesjs-config.json"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
