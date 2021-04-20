@@ -68,6 +68,7 @@ const fetchNasaData3 = async () => {
         let img = document.createElement("img");
         img.className = "image-gal"
         img.src = data.collection.items[randomNumber].links[0].href;
+        console.log(data.collection.items[randomNumber].links[0].href);
         document.getElementById("image-gallery").append(img)
     }
     
