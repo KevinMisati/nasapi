@@ -3,7 +3,9 @@ const api_key = config.NASA_API_KEY;
 
 const fetchNasaData1 = async () => {
     try{
-    const response = await fetch(`${url}${api_key}`)
+    const response = await fetch(
+      "https://api.nasa.gov/planetary/apod?api_key=P38duXGWwGwopehDe9VJl5rLKcvwoQen2TwbdgcH" /* `${url}${api_key}` */
+    );
     const data = await response.json()
     
     displayData1(data);
