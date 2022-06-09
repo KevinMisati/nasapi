@@ -158,7 +158,7 @@ h1{
 /* ===================image gallery======================== */
 .image-gallery-container{
     width: 100%;
-    padding: 5rem 3rem;
+    padding: 5rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -175,9 +175,9 @@ h1{
 .image-gallery img{
     max-width: 400px;
 }
-@media screen and (max-width:700px){
-    .image-gal{
-    width:100%;
+@media screen and (max-width:560px){
+    .image-gallery img{
+    max-width: 100%;
 }
 }
 /* ===================end of image gallery======================== */
