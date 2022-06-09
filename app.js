@@ -63,7 +63,7 @@ const fetchNasaData3 = async () => {
     );
     const data = await response.json();
   
-    for(let i=0;i<6;i++){
+    for(let i=0;i<20;i++){
         let randomNumber = Math.floor(Math.random() * 100);
         let img = document.createElement("img");
         img.className = "image-gal"

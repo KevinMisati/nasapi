@@ -157,35 +157,26 @@ h1{
 
 /* ===================image gallery======================== */
 .image-gallery-container{
-    width: 100vw;
-    display: flex;
-    justify-content: center;
+    width: 100%;
     padding: 5rem 3rem;
+    display: flex;
     flex-direction: column;
-    overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
 .image-gallery{
     width: 100%;
     max-width: var(--max-width);
-    display: grid;
-    grid-template-columns:repeat(2,1fr)
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: auto;
 }
-.image-gal{
-    
-/* width:50%; */
+.image-gallery img{
+    max-width: 400px;
 }
 @media screen and (max-width:700px){
-    .image-gallery{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    grid-template-columns:1fr;
-}
-    /* .image-gallery{
-        padding: 0 2rem;
-    } */
     .image-gal{
-    
     width:100%;
 }
 }
