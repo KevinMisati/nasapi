@@ -9,12 +9,6 @@ CSS
 
 JavaScript
 
-## Installation
-
-1. Clone the code from this repository
-2. Run npm install from the project folder
-3. Run npm start and the project will be opened in the browser
-
 
 
 ## Contributing
